@@ -1,0 +1,213 @@
+/* --- Base Styles & Reset --- */
+*, *::before, *::after {
+    box-sizing: border-box; 
+}
+
+html {
+    font-size: 16px; 
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.contenedor {
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+header {
+    width: 100%;
+    padding: 1rem 0; 
+    background-color: #4499bd;
+    text-align: center;
+    color: white;
+    flex-shrink: 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+
+h1 {
+    width: 90%; 
+    max-width: 700px; 
+    margin: 1rem auto; 
+    background-color: #eaeaea;
+    border-radius: 0.5rem; 
+    text-align: center;
+    padding: 0.5rem 1rem; 
+    font-size: 2.8rem; 
+    color: #333; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+.pasos {
+    box-sizing: border-box;
+    width: 90%; 
+    max-width: 700px; 
+    min-height: 5rem; 
+    background-color: #eaeaea;
+    border-radius: 0.5rem;
+    margin: 1rem auto; 
+    padding: 0.5rem;
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    gap: 0.5rem; 
+}
+
+.etapa {
+    flex: 1; 
+    min-width: 80px; 
+    text-align: center;
+    padding: 0.25rem; 
+}
+
+.circulo1,
+.circulo2 {
+    border-radius: 50%; 
+    color: #ffffff;
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-weight: bold;
+    width: 2rem; 
+    height: 2rem; 
+    font-size: 0.9rem; 
+    flex-shrink: 0; 
+}
+
+.circulo1 {
+    background: #0089c5;
+}
+
+.circulo2 {
+    background-color: #c5c5c5;
+}
+
+.texto-paso {
+    font-size: 0.75rem; 
+    font-weight: 700;
+    margin-top: 0.5rem; 
+    text-transform: uppercase;
+    line-height: 1.3; 
+}
+
+section {
+    background: white;
+    width: 90%; 
+    max-width: 500px; 
+    margin: 1rem auto; 
+    padding: 1.5rem; 
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1rem; 
+    flex-grow: 1; 
+}
+
+
+form {
+    margin: 1rem auto;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column; 
+}
+
+form label {
+    display: block; 
+    font-weight: bold;
+    text-align: left; 
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 0.75rem; 
+    margin-bottom: 0.75rem; 
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+
+form input[type="submit"].boton { 
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease; 
+    align-self: center; 
+    margin-top: 1rem; 
+}
+
+form input[type="submit"].boton:hover {
+    background-color: #0056b3; 
+}
+
+
+footer {
+    width: 100%;
+    padding: 1rem 0; 
+    margin-top: auto; 
+    background-color: #fb5931;
+    color: white;
+    text-align: center;
+    flex-shrink: 0; 
+    font-size: 0.9rem; 
+}
+
+
+.instruccion {
+    font-size: 1.25rem; 
+    text-transform: uppercase;
+    margin-bottom: 1rem; 
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+a:hover {
+    color: #e0e0e0; 
+}
+
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+    .pasos {
+        flex-direction: column; 
+        align-items: flex-start; 
+        gap: 1rem;
+    }
+    .etapa {
+        width: 100%; 
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-align: left;
+    }
+    .texto-paso {
+        margin-top: 0; 
+    }
+}
